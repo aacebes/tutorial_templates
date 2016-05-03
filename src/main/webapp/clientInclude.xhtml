@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://java.sun.com/jsf/facelets">
+ 
+<head>
+	<title>Tutorial de Facelets en JSF 2</title>
+</head>
+<body>       
+	<!-- Lo que escribamos aquí SI aquí se va a renderizar. -->
+	<div>
+		<b>Esto seguro que SI lo ves.</b>
+	</div>
+	
+	<ui:include src="toInclude.xhtml">
+		<ui:param name="name" value="cliente"></ui:param>
+	</ui:include>
+	
+	<!-- Y esto TAMBIÉN. -->
+	<div>
+		<b>Y esto también.</b>
+	</div>
+</body>
+</html>

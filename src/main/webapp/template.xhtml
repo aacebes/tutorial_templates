@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<head>
+	<title>Tutorial de Facelets en JSF 2</title>
+</head>
+<body>
+
+	<!-- Menús, headers y todo lo que vaya antes del contenido -->
+	<div>
+		Aquí podríamos por ejemplo poner un menú arriba del
+		contenido común a todas las páginas que usen el template.
+	</div>
+
+	<ui:insert name="contenido">
+		Contenido por defecto para que no quede en blanco...    
+	</ui:insert>
+
+	<!-- Footer y otros componentes que vayan después del contenido -->
+	<div>
+		Footer con información de contacto (común a todas las páginas).
+	</div>
+</body>
+</html>
